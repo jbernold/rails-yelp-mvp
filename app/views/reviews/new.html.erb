@@ -1,6 +1,7 @@
 <h1>Create a new review</h1>
 
 <%= simple_form_for([@restaurant, @review]) do |f| %>
-  <%= f.input :content, label: 'Your thoughts please' %>
+  <%= f.input :content, label: 'What did you think?' %>
+  <%= f.input :rating, label: 'On a scale of 1 to 5?' %>
   <%= f.submit %>
 <% end %>

@@ -13,6 +13,16 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="navbar-wagon">
+      <!-- Right Navigation -->
+      <div class="navbar-wagon-right hidden-xs hidden-sm">
+        <!-- Links -->
+        <%= link_to "Home", root_path, class: "navbar-wagon-item navbar-wagon-link" %>
+      </div>
+    </div>
+
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
